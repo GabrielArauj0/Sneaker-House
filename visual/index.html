@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker House</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js"> </script>
+</head>
+
+<body class="body-index">
+
+
+    <header>
+
+        <nav class="menu">
+            <div class="logo">
+                <img src="logo.ico" width="140px" height="140px" />
+            </div>
+            <ul>
+                <li class="active"><a href="/" title="home">Sneaker House</a></li>
+                <li><a href="/sobre" title="sobre">Sobre nós</a></li>
+                <li><a href="/nike" title="nike">Nike</a></li>
+                <li><a href="/adidas" title="adidas">Adidas</a></li>
+                <li><a href="/jordan" title="jordan">Jordan</a></li>
+                <li><a href="/vans" title="vans">Vans</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <aside>
+
+    </aside>
+    <main>
+
+        <img src="Barramenu.png" class="img-barra" href="/beneficios">
+
+        <div class="mid-box">
+            <div class="text-box">
+                <br>
+                Qual a sua marca favorita?
+            </div>
+            <div class="img-marcas">
+                <img src="nikee.png" href="/nike">
+
+                <img src="jordann.png" href="/jordan">
+
+                <img src="vanss.png" href="/vans">
+
+                <img src="adidass.png" href="/adidas">
+            </div>
+        </div>
+
+        <section class="slideshow-conteiner">
+
+            <div class="slide fade">
+                <img src="s1.png" style="width: 100%" class="imgSlide">
+
+            </div>
+
+            <div class="slide fade">
+                <img src="s2.png" style="width: 100%" class="imgSlide">
+
+            </div>
+
+            <div class="slide fade">
+                <img src="s3.png" style="width: 100%" class="imgSlide">
+
+            </div>
+
+            <a class="btnAnterior" onclick="mudarSlide(-1)">&lsaquo;</a>
+            <a class="btnProximo" onclick="mudarSlide(1)">&rsaquo;</a>
+
+        </section>
+
+        <section style="text-align:center">
+            <span class="indicator" onclick="slideAtual(1)"></span>
+            <span class="indicator" onclick="slideAtual(2)"></span>
+            <span class="indicator" onclick="slideAtual(3)"></span>
+        </section>
+
+        <script src="script.js"> </script>
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
