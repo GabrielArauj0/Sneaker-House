@@ -208,19 +208,19 @@
 
 
 
-.btnAnterior-vans {
+.btnAnterior {
   left: 0;
   border-radius: 0 5px 5px 0;
 }
 
-.btnProximo-vans {
+.btnProximo{
   right: 0;
   border-radius: 5px 0 0 5px;
 }
 
-.btnAnterior-vans:hover,
-.btnProximo-vans:hover,
-.textoSlide-vans:hover {
+.btnAnterior:hover,
+.btnProximo:hover,
+.textoSlide:hover {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -313,11 +313,11 @@
   margin: auto;
 }
 
-.slide {
+.slide-vans {
   display: none;
 }
 
-.imgSlide {
+.imgSlide-vans {
   vertical-align: middle;
 }
 
