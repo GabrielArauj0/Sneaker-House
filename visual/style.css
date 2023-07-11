@@ -116,25 +116,36 @@
   height: 90%;
 }
 
+.txt-btn {
+  font-size: 1vw;
+  font-weight: bold;
+}
+
+.vanslogo {
+  width: 10vw;
+  height: 30vh;
+  margin-top: -2.3vh;
+  margin-left: -1.5vw;
+}
+
 .left-side a {
   text-decoration: none;
-  color: white;
+  color: black;
   background-color: rgb(15, 184, 184);
   width: fit-content;
   padding: 15px 20px;
-  border-radius: 5px;
-}
-
-.left-side h1 {
-  font-size: 50px;
-  color: white;
-  font-weight: bold;
-  margin: 0%;
+  border-radius: 10px;
+  margin-left: 3%;
+  height: 5vh;
+  margin-top: 2vh;
+  width: 11.8vw;
 }
 
 .left-side h3 {
   color: white;
   font-weight: bold;
+  margin-top: -3vh;
+  margin-left: 0.5vw;
 }
 
 .left-side .font {
@@ -148,12 +159,24 @@
 .left-side p {
   color: white;
   margin-bottom: 60px;
+  margin-left: 0.5vw;
+  font-weight: bold;
+}
+
+.promo-txt{
+  color: red;
+  text-decoration: line-through;
+  margin-left: 0.5vw;
+  font-weight: 500;
+  font-size: 20px;
+  opacity: 50%;
 }
 
 .left-side span {
   font-size: 30px;
-  font-weight: 500;
-  color: white;
+  font-weight: 600;
+  color: green;
+  margin-left: 0.5vw;
 }
 
 .content-vans {
@@ -171,7 +194,7 @@
   justify-content: center;
   background-color: black;
   border-radius: 50px;
-  background: url('fundobox.jpg');
+  background: #141414;
   width: 750px;
   height: 500px;
   align-items: center;
@@ -273,22 +296,26 @@
 }
 
 .buttons legend {
-  font-size: 50px;
+  font-size: 4.5vh;
   color: white;
   font-weight: bold;
+  display: inline;
+  text-align: left;
+  margin-right: -3vw;
 }
 
 .tamanho button {
   margin-top: 0%;
   border: black solid 2px;
   outline: none;
-  width: 10%;
+  width: 2.5vw;
   height: 5vh;
   background-color: white;
   color: black;
   border-radius: 25%;
   cursor: pointer;
   transition: 0.5s;
+  margin: 0 1%;
 }
 
 .buttons {
@@ -467,3 +494,4 @@ animation-iteration-count: infinite;
   20% {margin-left: 0; }
   25% {margin-left: -100; }
 }
+
