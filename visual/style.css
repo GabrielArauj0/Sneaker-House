@@ -444,3 +444,26 @@
     border-radius: 50%;
   }
 }
+
+.fotos{
+  width: 100px;
+  height: 100px;
+  background-color: none;
+  overflow: hidden;
+}
+
+.fotos .carrosel{
+  width: 50%;
+  animation-name: animacao;
+animation-duration: 20s;
+animation-iteration-count: infinite;
+}
+
+.fotos .carrosel img{
+  width: 20%;
+}
+@keyframes animacao{
+  0% {margin-left: 0; }
+  20% {margin-left: 0; }
+  25% {margin-left: -100; }
+}
