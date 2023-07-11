@@ -8,13 +8,16 @@
   <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
-<body class="body-vans">
+<body>
 
   <header>
 
     <nav class="menu">
       <div class="logo-vans">
-        <img src="vans.ico" width="70px" height="60px" href="/" />
+        <img src="vans.ico" width="90px" height="60px" href="/" />
+      </div>
+      <div class="logos">
+        <img src="logo.ico" width="120px" height="150px" href="/" />
       </div>
       <ul>
         <li><a href="/" title="home">Sneaker House</a></li>
@@ -34,10 +37,13 @@
 
   <main>
     <border>
-      <div class="content-vans">
+      <div class="content">
         <div class="left-side">
           <div class="font">
-          <h1>Vans</h1>
+          <h1></h1>
+          <br>
+          <br>
+          <br>
           <h3>Marca: Vans</h3>
           <p>TÊNIS VANS OLD SKOOL</p>
           <span>R$379,99</span>
@@ -66,38 +72,39 @@
     </div>
         </div>
 
-      <section class="slideshow-conteiner-vans">
+      <section class="slideshow-conteiner">
 
-        <div class="slide fade-vans">
-          <img src="./vf1.png" style="width: 100%" class="imgSlide-vans">
-
-        </div>
-
-        <div class="slide fade-vans">
-          <img src="./vf2.png" style="width: 100%" class="imgSlide-vans">
+        <div class="slide fade">
+          <img src="vf1.png" style="width: 100%" class="imgSlide">
 
         </div>
 
-        <div class="slide fade-vans">
-          <img src="./vf3.png" style="width: 100%" class="imgSlide-vans">
+        <div class="slide fade">
+          <img src="vf2.png" style="width: 100%" class="imgSlide">
+
+        </div>
+
+        <div class="slide fade">
+          <img src="vf3.png" style="width: 100%" class="imgSlide">
 
 
         </div>
 
-        <section style="text-align:center" class="indicator-container-vans">
+        <section style="text-align:center" class="indicator-container">
 
-          <span class="indicator-vans" onclick="slideAtual(1)"></span>
-          <span class="indicator-vans" onclick="slideAtual(2)"></span>
-          <span class="indicator-vans" onclick="slideAtual(3)"></span>
+          <span class="indicator" onclick="slideAtual(1)"></span>
+          <span class="indicator" onclick="slideAtual(2)"></span>
+          <span class="indicator" onclick="slideAtual(3)"></span>
         </section>
       </section>
+
 
 
       </div>
 
     </border>
   </main>
-  <script src="script.js"></script>
+  <script src="slide.js"></script>
 </body>
 
 </html>

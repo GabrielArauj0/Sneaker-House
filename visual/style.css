@@ -69,12 +69,24 @@
   margin: 0;
 }
 
-.logo-vans {
+.logos {
   position: relative;
   bottom: 47px;
   right: 0px;
   left: 2px;
-  top: 1px;
+  top: -55px;
+  max-width: 5px;
+  max-height: 5px;
+  width: auto;
+  height: auto;
+}
+
+.logo-vans {
+  position: relative;
+  bottom: 47px;
+  right: 0px;
+  left: 200px;
+  top: 300px;
   max-width: 5px;
   max-height: 5px;
   width: auto;
@@ -283,7 +295,7 @@
   height: 80%;
 }
 
-.tamanho{
+.tamanho {
   margin-top: 2vh;
 }
 
