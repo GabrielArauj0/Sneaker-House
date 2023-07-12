@@ -1,5 +1,6 @@
 .menu {
   background-color: black;
+  margin-bottom: 2vh;
 }
 
 .menu ul {
@@ -67,6 +68,19 @@
   width: auto;
   height: auto;
   margin: 0;
+  margin-left: 1vw;
+}
+
+.logo-index {
+  position: relative;
+  bottom: 47px;
+  right: 30px;
+  max-width: 5px;
+  max-height: 5px;
+  width: auto;
+  height: auto;
+  margin: 0;
+  margin-left: -0.01vw;
 }
 
 .logos {
@@ -102,6 +116,7 @@
 
 .body-vans {
   margin: 0;
+  margin-left: -1vw;
   padding: 0;
   height: 100vh;
   width: 100vw;
@@ -125,7 +140,7 @@
   width: 10vw;
   height: 30vh;
   margin-top: -2.3vh;
-  margin-left: -1.5vw;
+  margin-left: -1.1vw;
 }
 
 .left-side a {
@@ -135,9 +150,9 @@
   width: fit-content;
   padding: 15px 20px;
   border-radius: 10px;
-  margin-left: 3%;
+  margin-left: 0.8vw;
   height: 5vh;
-  margin-top: 2vh;
+  margin-top: 1vh;
   width: 11.8vw;
 }
 
@@ -145,38 +160,39 @@
   color: white;
   font-weight: bold;
   margin-top: -3vh;
-  margin-left: 0.5vw;
+  margin-left: 1vw;
 }
 
 .left-side .font {
   display: flex;
   flex-direction: column;
   height: 80%;
-
 }
 
 
 .left-side p {
   color: white;
   margin-bottom: 60px;
-  margin-left: 0.5vw;
+  margin-left: 1vw;
   font-weight: bold;
 }
 
-.promo-txt{
-  color: red;
+.promo-txt {
+  color: rgb(156, 26, 26);
   text-decoration: line-through;
-  margin-left: 0.5vw;
+  margin-left: 1vw;
   font-weight: 500;
   font-size: 20px;
-  opacity: 50%;
+  opacity: 60%;
+  margin-top: -1vh;
 }
 
 .left-side span {
-  font-size: 30px;
+  font-size: 3.3vh;
   font-weight: 600;
-  color: green;
-  margin-left: 0.5vw;
+  color: white;
+  margin-left: 1vw;
+  margin-top: -6vh;
 }
 
 .content-vans {
@@ -236,7 +252,7 @@
   border-radius: 0 5px 5px 0;
 }
 
-.btnProximo{
+.btnProximo {
   right: 0;
   border-radius: 5px 0 0 5px;
 }
@@ -249,19 +265,19 @@
 
 .indicator-vans {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 2px;
-  background-color: #bbb;
-  border-radius: 50%;
+  height: 8vh;
+  width: 4vw;
+  margin: 0.5vw;
+  border-radius: 10%;
+  background-color: whitesmoke;
   display: inline-block;
-  transition: background-color 0.4s ease;
-
+  margin-left: 1vw;
+  margin-top: -3vh;
 }
 
-.ativo,
-.indicador-vans:hover {
-  background-color: #777;
+.indicator-vans:active{
+  border: black solid 2px;
+  opacity: 70%;
 }
 
 .fade-vans {
@@ -296,26 +312,34 @@
 }
 
 .buttons legend {
-  font-size: 4.5vh;
+  font-size: 3.6vh;
   color: white;
   font-weight: bold;
   display: inline;
   text-align: left;
-  margin-right: -3vw;
+  margin-right: 2vw;
+  margin-left: 0vw;
+  margin-bottom: 4vh;
 }
 
-.tamanho button {
+input[type="button"] {
   margin-top: 0%;
-  border: black solid 2px;
+  border: #141414 solid 2px;
   outline: none;
   width: 2.5vw;
   height: 5vh;
   background-color: white;
   color: black;
+  font-size: 1.9vh;
   border-radius: 25%;
   cursor: pointer;
   transition: 0.5s;
   margin: 0 1%;
+  margin-left: 0.1vw;
+}
+
+input[type="button"]:hover{
+  background-color: rgb(15, 184, 184);
 }
 
 .buttons {
@@ -326,7 +350,7 @@
   margin-top: 2vh;
 }
 
-.tamanho button:hover {
+.tamanho button:hover{
   background-color: rgb(15, 184, 184);
 }
 
@@ -347,6 +371,7 @@
 .imgSlide-vans {
   vertical-align: middle;
 }
+
 
 .btnAnterior,
 .btnProximo {
@@ -391,7 +416,7 @@
 }
 
 .ativo,
-.indicador:hover {
+.indicator:hover {
   background-color: #777;
 }
 
@@ -423,10 +448,9 @@
 }
 
 .img-barra {
-  margin-top: 8px;
   align-content: center;
-  margin-left: 460px;
-  margin-bottom: 8px;
+  display: block;
+  margin: auto;
 }
 
 .mid-box {
@@ -435,6 +459,7 @@
   height: 600px;
   box-shadow: black;
   position: relative;
+  margin-top: 1.8vh;
 
   &::after {
     content: "";
@@ -472,26 +497,101 @@
   }
 }
 
-.fotos{
+.fotos {
   width: 100px;
   height: 100px;
   background-color: none;
   overflow: hidden;
 }
 
-.fotos .carrosel{
+.fotos .carrosel {
   width: 50%;
   animation-name: animacao;
-animation-duration: 20s;
-animation-iteration-count: infinite;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
 }
 
-.fotos .carrosel img{
+.fotos .carrosel img {
   width: 20%;
 }
-@keyframes animacao{
-  0% {margin-left: 0; }
-  20% {margin-left: 0; }
-  25% {margin-left: -100; }
+
+@keyframes animacao {
+  0% {
+    margin-left: 0;
+  }
+
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100;
+  }
 }
 
+.btnAnterior-vans,
+.btnProximo-vans {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 15px;
+  margin-top: -22px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.4s ease;
+  user-select: none;
+}
+
+.btnAnterior-vans {
+  left: 0;
+  border-radius: 0 5px 5px 0;
+  margin-left: -2vw;
+}
+
+.btnProximo-vans {
+  right: 0;
+  border-radius: 5px 0 0 5px;
+  margin-right: -2vw;
+}
+
+.btnAnterior-vans:hover,
+.btnProximo-vans:hover {
+  transform: scale(1.4);
+  transition: all 0.5s;
+}
+
+.linha {
+  margin-bottom: 4vh;
+  margin-top: -7vh;
+  border-color: #141414;
+}
+
+.parcela-txt {
+  font-size: 2vh;
+  color: rgb(15, 184, 184);
+  font-weight: 500;
+  margin-left: 15.7vw;
+}
+
+.parcela-txt2 {
+  font-size: 2.2vh;
+  color: rgb(15, 184, 184);
+  font-weight: bold;
+  margin-left: 11vw;
+  margin-bottom: 2.5vh;
+}
+
+.mid-boxvans {
+  background: #141414;
+  height: 600px;
+  position: relative;
+  margin-top: -4.6vh;
+  box-shadow: black 0px 20px 30px -10px;
+  transition: 0.3s linear;
+}
+
+.mid-boxvans:hover {
+  transform: scale(1.03);
+}

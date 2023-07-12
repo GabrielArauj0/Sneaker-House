@@ -13,21 +13,21 @@
   <header>
 
     <nav class="menu">
-        <div class="logo">
-            <img src="logo.ico" width="140px" height="140px"/>
-        </div>
-        <ul>
-            <li><a href="/" title="home">Sneaker House</a></li>
-            <li><a href="/sobre" title="sobre">Sobre nós</a></li>
-            <li><a href="/nike" title="nike">Nike</a></li>
-            <li><a href="/adidas" title="adidas">Adidas</a></li>
-            <li><a href="/jordan" title="jordan">Jordan</a></li>
-            <li class="active"><a href="/vans" title="vans">Vans</a></li>
-        </ul>
+      <div class="logo">
+        <img src="logo.ico" width="140px" height="140px" />
+      </div>
+      <ul>
+        <li><a href="/" title="home">Sneaker House</a></li>
+        <li><a href="/sobre" title="sobre">Sobre nós</a></li>
+        <li><a href="/nike" title="nike">Nike</a></li>
+        <li><a href="/adidas" title="adidas">Adidas</a></li>
+        <li><a href="/jordan" title="jordan">Jordan</a></li>
+        <li class="active"><a href="/vans" title="vans">Vans</a></li>
+      </ul>
 
     </nav>
 
-</header>
+  </header>
 
   <aside>
 
@@ -36,90 +36,94 @@
 
   <main>
 
-    <img src="Barramenu.png" class="img-barra" href="/beneficios">
+    <a href="/beneficios"><img src="Barramenu.png" class="img-barra"></a>
 
     <border>
       <div class="content-vans">
         <div class="left-side">
           <div class="font">
-          <img src="vanslogo.png" class="vanslogo">
-          <br>
-          <br>
-          <br>
-          <h3>Marca: Vans</h3>
-          <p>TÊNIS VANS OLD SKOOL</p>
-          <txt class="promo-txt">R$ 499,90 </txt>
-          <span>R$ 379,99</span>
-          <br>
-          <a href="" class="txt-btn">Adicionar ao Carrinho</a>
-        </div>
-        <div class="buttons">
-          <legend>Selecione seu tamanho</legend>
-          <div class="tamanho">
-      
-            <button type="button" class="btn btn-outline-light">38</button>
-         
-          
-            <button type="button" class="btn btn-outline-light">39</button>
-        
-          
-            <button type="button" class="btn btn-outline-light">40</button>
-          
-          <button type="button" class="btn btn-outline-light">41</button>
-          
-          <button type="button" class="btn btn-outline-light">42</button>
-          
-          <button type="button" class="btn btn-outline-light">43</button>
-         
-        </div>
-    </div>
-    <main class="mostrador">
-      <section class="fotos">
-        <div class="carrosel">
-          <img src="vc1.png" alt="Vans 1">
-          <img src="vfv1.png" alt="Vans 2">
-          <img src="vl1.png" alt="Vans 3">
-          <img src="vo1.png" alt="Vans 4">
-        </div>
+            <img src="vanslogo.png" class="vanslogo">
+            <br>
+            <br>
+            <br>
+            <h3>Marca: Vans</h3>
+            <p>TÊNIS VANS OLD SKOOL</p>
+            <txt class="promo-txt">R$ 499,90 </txt>
+            <txt class="parcela-txt">EM ATÉ</txt>
+            <txt class="parcela-txt2">10X DE R$ 37,99</txt>
+            <span>R$ 379,99</span>
+            <br>
+            <a href="" class="txt-btn">Adicionar ao Carrinho</a>
+          </div>
+          <div class="buttons">
+            <legend>Selecione seu tamanho</legend>
+            <div class="tamanho">
 
-        
-      </section>
+              <input type="button" class="btn btn-outline-light" value="38" />
 
+              <input type="button" class="btn btn-outline-light" value="39" />
 
-    </main>
-        </div>
+              <input type="button" class="btn btn-outline-light" value="40" />
 
-      <section class="slideshow-conteiner-vans">
+              <input type="button" class="btn btn-outline-light" value="41" />
 
-        <div class="slide fade-vans">
-          <img src="./vf1.png" style="width: 100%" class="imgSlide-vans">
+              <input type="button" class="btn btn-outline-light" value="42" />
+
+              <input type="button" class="btn btn-outline-light" value="43" />
+
+            </div>
+          </div>
 
         </div>
 
-        <div class="slide fade-vans">
-          <img src="./vf2.png" style="width: 100%" class="imgSlide-vans">
 
-        </div>
+        <section class="slideshow-conteiner-vans">
 
-        <div class="slide fade-vans">
-          <img src="./vf3.png" style="width: 100%" class="imgSlide-vans">
+          <div class="img-container">
+
+            <div class="slide fade-vans">
+              <img src="./vf1.png" style="width: 100%" class="imgSlide-vans">
+
+            </div>
+
+            <div class="slide fade-vans">
+              <img src="./vf2.png" style="width: 100%" class="imgSlide-vans">
+
+            </div>
+
+            <div class="slide fade-vans">
+              <img src="./vf3.png" style="width: 100%" class="imgSlide-vans">
 
 
-        </div>
+            </div>
+          </div>
 
-        <section style="text-align:center" class="indicator-container">
+          <hr class="linha">
 
-          <span class="indicator-vans" onclick="slideAtual(1)"></span>
-          <span class="indicator-vans" onclick="slideAtual(2)"></span>
-          <span class="indicator-vans" onclick="slideAtual(3)"></span>
+          <section style="text-align:center" class="indicator-container">
+
+            <a class="btnAnterior-vans" onclick="mudarSlide(-1)">&lsaquo;</a>
+            <a class="btnProximo-vans" onclick="mudarSlide(1)">&rsaquo;</a>
+
+            <img class="indicator-vans" src="./vf1.png" onclick="slideAtual(1)">
+            <img class="indicator-vans" src="./vf2.png" onclick="slideAtual(2)">
+            <img class="indicator-vans" src="./vf3.png" onclick="slideAtual(3)">
+
+          </section>
         </section>
-      </section>
 
 
 
       </div>
 
     </border>
+    <div class="mid-boxvans">
+
+    </div>
+    <p>aaaaaaa</p>
+    <p>aaaaaaa</p>
+    <p>aaaaaaa</p>
+    <p>aaaaaaa</p>
   </main>
   <script src="script.js"></script>
 </body>
