@@ -723,6 +723,7 @@ input[type="button"]:hover {
   transition: 1s;
   position: relative;
   left: 25%;
+  margin-top: 25%;
 }
 
 .card-button:hover{
