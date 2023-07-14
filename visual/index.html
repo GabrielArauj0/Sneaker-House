@@ -10,6 +10,7 @@
     <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
     <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/25a00949b4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 
 <body class="body-index">
@@ -69,18 +70,107 @@
                 <img src="adidass.png" href="/adidas" class="img-marcas-adidas">
             </div>
         </div>
-        <p>ASDPAFPAPSPA</p>
-        <p>ASDPAFPAPSPA</p>
-        <p>ASDPAFPAPSPA</p>
-        <p>ASDPAFPAPSPA</p>
-        <p>ASDPAFPAPSPA</p>
-        <p>ASDPAFPAPSPA</p>
-        <p>ASDPAFPAPSPA</p>
-        <p>ASDPAFPAPSPA</p>
 
-        <div class="slideshow-conteiner">
+        <section class="slideshow-conteiner">
 
-            <img src="banner snk.png" width="100%"/>
+            <div class="swiper mySwiper container">
+                <div class="swipre-wrapper content">
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="vc1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper mySwiper container">
+                <div class="swipre-wrapper content">
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="vc1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper mySwiper container">
+                <div class="swipre-wrapper content">
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="vc1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper mySwiper container">
+                <div class="swipre-wrapper content">
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="vc1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper mySwiper container">
+                <div class="swipre-wrapper content">
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="vc1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper mySwiper container">
+                <div class="swipre-wrapper content">
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="vc1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper mySwiper container">
+                <div class="swipre-wrapper content">
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="vc1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </section>
+
+        <div class="banner-img">
+            <img src="banner snk.png" width="100%" />
 
         </div>
         <p>ASDPAFPAPSPA</p>
@@ -114,8 +204,29 @@
 
 
 
+    <script src="script.js"> </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
+    <script>
 
+        var swiper = new Swiper(" .mySwiper",{
+            slidesPerView:3,
+            spaceBetween:30,
+            slidesPerGroup:3,
+            loop:true,
+            loopFillGroupWithBlank:true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            }
+        }
+        )
 
+    </script>
 </body>
-<script src="script.js"> </script>
+
+
 </html>
