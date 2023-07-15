@@ -1,11 +1,11 @@
 {
-  "name": "sneaker-house-node-banco",
+  "name": "sneaker-house",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Gabriel Araujo e Fernando Fuckner",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.2",
@@ -14,5 +14,21 @@
     "mysql": "^2.18.1",
     "sql": "^0.78.0"
   },
-  "description": ""
+  "devDependencies": {},
+  "description": "Sneaker house, site de compra e venda de tênis especiais e originais",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielArauj0/Sneaker-House.git"
+  },
+  "keywords": [
+    "sneaker",
+    "house",
+    "shop",
+    "money",
+    "website"
+  ],
+  "bugs": {
+    "url": "https://github.com/GabrielArauj0/Sneaker-House/issues"
+  },
+  "homepage": "https://github.com/GabrielArauj0/Sneaker-House#readme"
 }
