@@ -2,133 +2,212 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sneaker House</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
-    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
-    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/25a00949b4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sneaker House</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <script src="script.js"> </script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
 <body class="body-index">
 
+      
+  <header class="header">
+    <nav class="nav container">
+       <div class="nav__data">
+          <a href="#" class="nav__logo">
+             <img src="logo.ico" width="130vw" height="130vh">
+          </a>
+          
+          <div class="nav__toggle" id="nav-toggle">
+             <i class="ri-menu-line nav__burger"></i>
+             <i class="ri-close-line nav__close"></i>
+          </div>
+       </div>
 
-    <div class="disclaimer">
-        <p class="disclaimer-text">
-            <i class="fa-solid fa-circle-check"></i> Compre e venda seus tênis com segurança.
+       <!--=============== NAV MENU ===============-->
+       <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+             <li><a href="#" class="nav__link">Sneaker House</a></li>
 
-            <i class="fa-solid fa-dollar-sign"></i> Quero vender meu tênis.
-        </p>
-    </div>
+             <li><a href="#" class="nav__link">Sobre nós</a></li>
 
-    <header>
-
-        <nav class="menu">
-            <div class="logo-index">
-                <img src="logo.ico" width="140px" height="140px" />
-            </div>
-            <ul>
-                <li class="active"><a href="/" title="home">Sneaker House</a></li>
-                <li><a href="/sobre" title="sobre">Sobre nós</a></li>
-                <li><a href="/nike" title="nike">Nike</a></li>
-                <li><a href="/adidas" title="adidas">Adidas</a></li>
-                <li><a href="/jordan" title="jordan">Jordan</a></li>
-                <li><a href="/vans" title="vans">Vans</a></li>
-            </ul>
-
-        </nav>
-
-    </header>
-
-    <div class="subpromo">
-        <p class="subpromo-text">
-            Use o cupom <strong>PRIMEIRA,</strong> e garanta 10% OFF em produtos acima de <strong>R$ 499,90.</strong>
-        </p>
-    </div>
-
-    <aside>
-    </aside>
-    <main>
-
-        <a href="/beneficios"><img src="Barramenu.png" class="img-barra"></a>
-
-        <div class="mid-box">
-            <div class="text-box">
-                <br>
-                Qual a sua marca favorita?
-            </div>
-            <div class="img-marcas">
-                <img src="nikee.png" href="/nike" class="img-marcas-nike">
-
-                <img src="jordann.png" href="/jordan" class="img-marcas-jordan">
-
-                <img src="vanss.png" href="/vans" class="img-marcas-vans">
-
-                <img src="adidass.png" href="/adidas" class="img-marcas-adidas">
-            </div>
-        </div>
-
-
-        <div class="container-tenis">
-            <div class="card">
-                <img src="YB1.png" class="card-img" alt="">
-                <div class="card-data">
-                    <h1 class="card-title">Tênis Yeezy Boost 350</h1>
-                    <span class="card-preco">R$ 1629,90</span>
-                    <p class="card-description">A linha adidas yeezy foi criada como consequência da colaboração entre a
-                        Adidas e o rapper americano Kanye West</p>
-                    <a href="#" class="card-button">Compre já</a>
+             <!--=============== DROPDOWN 1 ===============-->
+             <li class="dropdown__item">
+                <div class="nav__link">
+                   Marcas <i class="ri-arrow-down-s-line dropdown__arrow"></i>
                 </div>
-            </div>
 
-            <div class="card">
-                <img src="JP1.png" class="card-imgj" alt="">
-                <div class="card-data">
-                    <h1 class="card-title">Tênis Air Jordan 1 x PSG </h1>
-                    <span class="card-preco">R$ 1899,90</span>
-                    <p class="card-description">Este novo lançamento do Air Jordan 1, é mais uma colaboração da marca
-                        com o time de futebol PSG. </p>
-                    <a href="#" class="card-button">Compre já</a>
+                <ul class="dropdown__menu">
+                   <li>
+                      <a href="#" class="dropdown__link">
+                         <i class="ri-pie-chart-line"></i> Nike
+                      </a>                          
+                   </li>
+
+                   <li>
+                      <a href="#" class="dropdown__link">
+                         <i class="ri-arrow-up-down-line"></i> Adidas
+                      </a>
+                   </li>
+
+                   <li>
+                     <a href="#" class="dropdown__link">
+                        <i class="ri-arrow-up-down-line"></i> Jordan
+                     </a>
+                  </li>
+
+                  <li>
+                     <a href="#" class="dropdown__link">
+                        <i class="ri-arrow-up-down-line"></i> Vans
+                     </a>
+                  </li>
+
+                   <!--=============== DROPDOWN SUBMENU ===============-->
+            
+                      <ul class="dropdown__submenu">
+                         <li>
+                            <a href="#" class="dropdown__sublink">
+                               <i class="ri-file-list-line"></i> Documents
+                            </a>
+                         </li>
+ 
+                         <li>
+                            <a href="#" class="dropdown__sublink">
+                               <i class="ri-cash-line"></i> Payments
+                            </a>
+                         </li>
+ 
+                         <li>
+                            <a href="#" class="dropdown__sublink">
+                               <i class="ri-refund-2-line"></i> Refunds
+                            </a>
+                         </li>
+                      </ul>
+                   </li>
+                </ul>
+             </li>
+             
+             <li><a href="#" class="nav__link">Products</a></li>
+
+             <!--=============== DROPDOWN 2 ===============-->
+             <li class="dropdown__item">
+                <div class="nav__link">
+                   Meu perfil <i class="ri-arrow-down-s-line dropdown__arrow"></i>
                 </div>
-            </div>
 
-            <div class="card">
-                <img src="vf1.png" class="card-img" alt="">
-                <div class="card-data">
-                    <h1 class="card-title">Tênis Vans OLD SKOOL</h1>
-                    <span class="card-preco">R$ 379,99</span>
-                    <p class="card-description">Tênis Vans Old Skool Sendo a linha que balança o mundo do skate o tênis
-                        Vans Old Skool é o clássico que amamos!</p>
-                    <a href="/vans" class="card-button">Compre já</a>
-                </div>
-            </div>
-        </div>
+                <ul class="dropdown__menu">
+                   <li>
+                      <a href="#" class="dropdown__link">
+                         <i class="ri-user-line"></i> Vendedor
+                      </a>                          
+                   </li>
 
-        <div class="adidas-page">
-            <img src="adidasbanner.png" style="width: 100%" class="adidasimgban">
-        </div>
+                   <li>
+                      <a href="#" class="dropdown__link">
+                         <i class="ri-lock-line"></i> Minha conta
+                      </a>
+                   </li>
 
-        <div class="banner-img">
-            <img src="banner snk.png" width="100%" />
+                   <li>
+                      <a href="#" class="dropdown__link">
+                         <i class="ri-message-3-line"></i> Notificações
+                      </a>
+                   </li>
+                </ul>
+             </li>
 
-        </div>
-        <p>ASDPAFPAPSPA</p>
-        <p>ASDPAFPAPSPA</p>
-        <p>ASDPAFPAPSPA</p>
-        <p>ASDPAFPAPSPA</p>
-        <p>ASDPAFPAPSPA</p>
-        <p>ASDPAFPAPSPA</p>
-        <p>ASDPAFPAPSPA</p>
-        <p>ASDPAFPAPSPA</p>
+          </ul>
+       </div>
+    </nav>
+ </header>
+ <div class="subpromo">
+  <p class="subpromo-text">
+      Use o cupom <strong>PRIMEIRA,</strong> e garanta 10% OFF em produtos acima de <strong>R$ 499,90.</strong>
+  </p>
+</div>
+
+<aside>
+</aside>
+<main>
+
+  <a href="/beneficios"><img src="Barramenu.png" class="img-barra"></a>
+
+  <div class="mid-box">
+      <div class="text-box">
+          <br>
+          Qual a sua marca favorita?
+      </div>
+      <div class="img-marcas">
+          <img src="nikee.png" href="/nike" class="img-marcas-nike">
+
+          <img src="jordann.png" href="/jordan" class="img-marcas-jordan">
+
+          <img src="vanss.png" href="/vans" class="img-marcas-vans">
+
+          <img src="adidass.png" href="/adidas" class="img-marcas-adidas">
+      </div>
+  </div>
+
+
+  <div class="container-tenis">
+      <div class="card">
+          <img src="YB1.png" class="card-img" alt="">
+          <div class="card-data">
+              <h1 class="card-title">Tênis Yeezy Boost 350</h1>
+              <span class="card-preco">R$ 1629,90</span>
+              <p class="card-description">A linha adidas yeezy foi criada como consequência da colaboração entre a
+                  Adidas e o rapper americano Kanye West</p>
+              <a href="#" class="card-button">Compre já</a>
+          </div>
+      </div>
+
+      <div class="card">
+          <img src="JP1.png" class="card-imgj" alt="">
+          <div class="card-data">
+              <h1 class="card-title">Tênis Air Jordan 1 x PSG </h1>
+              <span class="card-preco">R$ 1899,90</span>
+              <p class="card-description">Este novo lançamento do Air Jordan 1, é mais uma colaboração da marca
+                  com o time de futebol PSG. </p>
+              <a href="#" class="card-button">Compre já</a>
+          </div>
+      </div>
+
+      <div class="card">
+          <img src="vf1.png" class="card-img" alt="">
+          <div class="card-data">
+              <h1 class="card-title">Tênis Vans OLD SKOOL</h1>
+              <span class="card-preco">R$ 379,99</span>
+              <p class="card-description">Tênis Vans Old Skool Sendo a linha que balança o mundo do skate o tênis
+                  Vans Old Skool é o clássico que amamos!</p>
+              <a href="/vans" class="card-button">Compre já</a>
+          </div>
+      </div>
+  </div>
+
+  <div class="adidas-page">
+      <img src="adidasbanner.png" style="width: 100%" class="adidasimgban">
+  </div>
+
+  <div class="banner-img">
+      <img src="banner snk.png" width="100%" />
+
+  </div>
+  <p>ASDPAFPAPSPA</p>
+  <p>ASDPAFPAPSPA</p>
+  <p>ASDPAFPAPSPA</p>
+  <p>ASDPAFPAPSPA</p>
+  <p>ASDPAFPAPSPA</p>
+  <p>ASDPAFPAPSPA</p>
+  <p>ASDPAFPAPSPA</p>
+  <p>ASDPAFPAPSPA</p>
 
 
 
 
 
-    </main>
+</main>
 
 
 
@@ -147,7 +226,7 @@
 
 
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 
 
