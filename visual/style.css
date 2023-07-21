@@ -137,9 +137,9 @@
 }
 
 .vanslogo {
-  width: 20vw;
-  height: 30vh;
-  margin-top: -5.8vh;
+  width: 15vw;
+  height: 20vh;
+  margin-top: -13%;
   margin-left: -1.1vw;
 }
 
@@ -162,7 +162,7 @@
 .left-side h3 {
   color: white;
   font-weight: bold;
-  margin-top: -3vh;
+  margin-top: -35%;
   margin-left: 1vw;
 }
 
@@ -170,6 +170,7 @@
   display: flex;
   flex-direction: column;
   height: 80%;
+  width: 35%;
 }
 
 
@@ -180,6 +181,15 @@
   font-weight: bold;
 }
 
+.preço{
+  color: white;
+  margin-left: 1vw;
+  font-weight: 500;
+  font-size: 20px;
+  opacity: 80%;
+  margin-top: -20%;
+}
+
 .promo-txt {
   color: rgb(156, 26, 26);
   text-decoration: line-through;
@@ -187,7 +197,7 @@
   font-weight: 500;
   font-size: 20px;
   opacity: 80%;
-  margin-top: -1vh;
+  margin-top: -5%;
 }
 
 .left-side span {
@@ -298,21 +308,21 @@
 }
 
 .buttons legend {
-  font-size: 3.6vh;
+  font-size: 250%;
   color: white;
   font-weight: bold;
   display: inline;
   text-align: left;
-  margin-right: 2vw;
   margin-left: 0vw;
   margin-bottom: 4vh;
+  padding: 0%;
 }
 
 input[type="button"] {
   margin-top: 0%;
   border: #141414 solid 2px;
   outline: none;
-  width: 4vw;
+  width: 12%;
   height: 5vh;
   background-color: white;
   color: black;
@@ -576,15 +586,15 @@ input[type="button"]:hover {
   font-size: 2vh;
   color: #0fb8b8;
   font-weight: 500;
-  margin-left: 14vw;
+  margin-left: 54%;
 }
 
 .parcela-txt2 {
   font-size: 2.2vh;
   color: #0fb8b8;
   font-weight: bold;
-  margin-left: 14vw;
-  margin-bottom: 2.5vh;
+  margin-left: 10vw;
+  margin-bottom: 2vh;
 }
 
 .mid-boxvans {
