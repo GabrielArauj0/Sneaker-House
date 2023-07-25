@@ -13,6 +13,7 @@ function mostrarSlide(ns) {
     var i;
     var slides = document.getElementsByClassName("slide")
     var indicadores = document.getElementsByClassName("indicator")
+    console.log(slides, indicadores, "a") 
     if (ns > slides.length) {
         numSlide = 1;
     }
@@ -29,22 +30,20 @@ function mostrarSlide(ns) {
     slides[numSlide - 1].style.display = "block";
     indicadores[numSlide - 1].className += " ativo";
 
-
 }
 
 
-/*=============== SHOW MENU ===============*/
-const showMenu = (toggleId, navId) =>{
-    const toggle = document.getElementById(toggleId),
-          nav = document.getElementById(navId)
- 
-    toggle.addEventListener('click', () =>{
-        // Add show-menu class to nav menu
-        nav.classList.toggle('show-menu')
- 
-        // Add show-icon to show and hide the menu icon
-        toggle.classList.toggle('show-icon')
+$(function() {
+    $('body').addClass('js');
+  
+    var $hamburger = $('.hamburger'),
+        $nav = $('#site-nav'),
+        $masthead = $('#masthead');
+  
+    $hamburger.click(function() {
+      $(this).toggleClass('is-active');
+      $nav.toggleClass('is-active');
+      $masthead.toggleClass('is-active');
+      return false; 
     })
- }
- 
- showMenu('nav-toggle','nav-menu')
+});

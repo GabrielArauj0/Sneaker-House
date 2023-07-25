@@ -15,15 +15,17 @@ app.listen(3000, function () {
 //* LINK DAS PAGINAS *//
 
 app.get('/', function (req, res) {
-  res.sendFile(__dirname + '/visual/index.html');
+  res.render('index.ejs');
 });
 
 app.get('/beneficios', function (req, res) {
   res.sendFile(__dirname + '/visual/beneficios.html');
 });
 
+app.set('views','./visual');
+
 app.get('/vans', function (req, res) {
-  res.sendFile(__dirname + '/visual/vans.html');
+  res.render('vans.ejs');
 });
 
 //* DATA BASE *//
