@@ -15,8 +15,12 @@ app.listen(3000, function () {
 //* LINK DAS PAGINAS *//
 
 app.get('/', function (req, res) {
-  res.render('index.ejs');
+  res.render('index.html');
 });
+
+app.get('/tenis', function (req, res) {
+  res.render('tenisPag.ejs')
+})
 
 app.get('/beneficios', function (req, res) {
   res.sendFile(__dirname + '/visual/beneficios.html');
