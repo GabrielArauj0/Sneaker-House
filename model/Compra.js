@@ -1,4 +1,4 @@
-const Usuario = require('./Usuario');
+const Usuario = require('./Cliente');
 const Tenis = require('./Tenis');
 
 module.exports = class Compra {

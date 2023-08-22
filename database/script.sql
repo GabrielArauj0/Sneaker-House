@@ -1,30 +1,14 @@
--- MySQL Workbench Forward Engineering
+create database sneakerhouse;
+use sneakerhouse;
 
-SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
-SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
-SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
-
--- -----------------------------------------------------
--- Schema sneakerhouse
--- -----------------------------------------------------
-
--- -----------------------------------------------------
--- Schema sneakerhouse
--- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `sneakerhouse` DEFAULT CHARACTER SET utf8 ;
-USE `sneakerhouse` ;
-
--- -----------------------------------------------------
--- Table `sneakerhouse`.`Cliente`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `sneakerhouse`.`Cliente` (
-  `CPF` INT NOT NULL,
-  `Nome` VARCHAR(100) NOT NULL,
-  `Endereco` VARCHAR(100) NOT NULL,
-  `Celular` VARCHAR(15) NOT NULL,
-  `Email` VARCHAR(100) NOT NULL,
-  PRIMARY KEY (`CPF`))
-ENGINE = InnoDB;
+create table Cliente (
+cpf int not null,
+nome varchar(100) not null,
+endereco varchar(150),
+celular varchar(15),
+senha varchar(20),
+email varchar(100) not null,
+primary key(cpf) )
 
 
 -- -----------------------------------------------------

@@ -18,13 +18,42 @@ app.get('/', function (req, res) {
   res.render('index.html');
 });
 
+app.post('/', function (req, res) {
+  res.render('index.html');
+});
+
 app.get('/tenis', function (req, res) {
   res.render('tenisPag.ejs')
 })
 
+app.get('/registro', function (req, res) {
+  res.sendFile(__dirname + '/visual/registro.html');
+});
+
 app.get('/beneficios', function (req, res) {
   res.sendFile(__dirname + '/visual/beneficios.html');
 });
+
+app.get('/login', function (req, res) {
+  res.sendFile(__dirname + '/visual/login.html');
+});
+
+app.post('/processarCadastro', function (req, res) {
+  var c = new Cliente();
+
+  c.nome = req.body.nome;
+  c.cpf = req.body.cpf;
+  c.endereco = req.body.endereco;
+  c.email = req.body.email;
+  c.senha = req.body.senha;
+  c.celular = req.body.celular;
+
+  c.inserir(conexao);
+
+  res.sendFile(__dirname + '/visual/login.html');
+});
+
+
 
 app.set('views','./visual');
 
@@ -48,42 +77,6 @@ conexao.connect(function (err) {
 
 //* MODELOS *//
 
-const Usuario = require('./model/Usuario');
-const Tenis = require('./model/Tenis');
-const Compra = require('./model/Compra');
+const Cliente = require('./model/Cliente');
 
-//* ATIVAR FORMULARIO USUARIO *//
 
-app.get('/cadastro', function (req, res) {
-  res.sendFile(__dirname + '/visual/cadastro.html');
-});
-
-app.post('/processarCadastro', function (req, res) {
-  var usu = new Usuario();
-
-  usu.matricula = req.body.cpf;
-  usu.nome = req.body.nome;
-  usu.celular = req.body.celular;
-  usu.endereco = req.body.endereco;
-  usu.email = req.body.email;
-
-  usu.inserir(conexao);
-});
-
-//* ATIVAR FORMULARIO TENIS *//
-
-app.get('/cadastroTenis', function (req, res) {
-  res.sendFile(__dirname + '/visual/cadastroTenis.html');
-});
-
-app.post('/processarTenis', function (req, res) {
-  var ten = new Tenis();
-
-  ten.id = req.body.id;
-  ten.nome = req.body.nome;
-  ten.descricao = req.body.descricao;
-  ten.preco_unitario = req.body.preco_unitario;
-  ten.unidade = req.body.unidade;
-
-  ten.inserir(conexao);
-});
