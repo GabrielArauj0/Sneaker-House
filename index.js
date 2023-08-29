@@ -15,27 +15,31 @@ app.listen(3000, function () {
 //* LINK DAS PAGINAS *//
 
 app.get('/', function (req, res) {
-  res.render('index.html');
+  res.render('index.ejs');
 });
 
 app.post('/', function (req, res) {
-  res.render('index.html');
+  res.render('index.ejs');
 });
 
 app.get('/tenis', function (req, res) {
   res.render('tenisPag.ejs')
 })
 
+app.get('/registrado', function (req, res) {
+  res.render('../visual/registrado.ejs')
+})
+
 app.get('/registro', function (req, res) {
-  res.sendFile(__dirname + '/visual/registro.html');
+  res.render('../visual/registro.ejs');
 });
 
 app.get('/beneficios', function (req, res) {
-  res.sendFile(__dirname + '/visual/beneficios.html');
+  res.render('../visual/beneficios.ejs');
 });
 
 app.get('/login', function (req, res) {
-  res.sendFile(__dirname + '/visual/login.html');
+  res.render('../visual/login.ejs');
 });
 
 app.post('/processarCadastro', function (req, res) {
@@ -50,7 +54,7 @@ app.post('/processarCadastro', function (req, res) {
 
   c.inserir(conexao);
 
-  res.sendFile(__dirname + '/visual/login.html');
+  res.render('../visual/registrado.ejs');
 });
 
 
