@@ -103,7 +103,7 @@ body{
 }
 
 .search input[type=text]{
-  padding: 4% 70% ;
+  padding: 6% 70% ;
   border-radius:25px;
   border: none;
   margin-top: 1%;
@@ -114,13 +114,9 @@ body{
 .search{
   transform: scale(1);
   transition: ease 0.5s;
-  margin-left: -18%;
+  margin-left: -95rem;
+  margin-top: -3.29rem;
     }
-         
-.search:hover{
-  transform: scale(1.05);
-  transition: ease 0.4s;
-}
 
 .subnav {
   border: 1px solid #0fb8b8;
@@ -198,7 +194,7 @@ a#login-button.button.logout.login.w-button:hover {
   height: 600px;
   box-shadow: black;
   position: relative;
-  margin-top: 11%;
+  margin-top: 6%;
 }
 
 .text-box {
@@ -234,7 +230,7 @@ a#login-button.button.logout.login.w-button:hover {
 }
 
 .img-marcas-nike:hover, .img-marcas-jordan:hover, .img-marcas-adidas:hover, .img-marcas-vans:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: ease 0.4s;
 }
 
@@ -456,7 +452,7 @@ a#login-button.button.logout.login.w-button:hover {
 .sobre-description {
   font-size: 1.1rem;
   position: absolute;
-  margin-top: 10%;
+  margin-top: 10rem;
   margin-left: 3%;
   margin-right: 3%;
 }
@@ -601,12 +597,9 @@ a#login-button.button.logout.login.w-button:hover {
     a{
         text-decoration: none;
     }
-    a:hover{
-        color: orange;
-    }
     .social-icons i:hover{
         color: orange;
-        transform: scale(1.1);
+        transform: scale(1.05);
     }
     .bottom-bar{
         background: orange;
@@ -638,12 +631,6 @@ a#login-button.button.logout.login.w-button:hover {
   font-family: Poppins;
   font-size: 16px;
   cursor: pointer;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 .containerslider {
