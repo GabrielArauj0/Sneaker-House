@@ -148,14 +148,12 @@ a#login-button.button.logout.login.w-button {
   text-decoration: none;
   transition: background-color 0.5s;
   z-index: 30;
-  transform: scale(1);
   transition: ease 0.4s;
 }
  
 a#login-button.button.logout.login.w-button:hover {
   background-color: #141414;
   border: white solid 1px;
-  transform: scale(1.1);
   transition: ease 0.4s;
   color: white;
   font-weight: 400;
@@ -677,3 +675,39 @@ a#login-button.button.logout.login.w-button:hover {
 #prevbutton {
   transform: rotate(180deg);
 }
+
+.login-container {
+  width: 30rem;
+  height: 30rem;
+  background: #141414;
+  border-radius: 0.5rem;
+  font-family: Poppins;
+  margin-left: 45rem;
+  margin-bottom: 8rem;
+  margin-top: 8rem;
+  text-align: center;
+}
+
+.email, .senha {
+  color: white
+}
+
+.caixaemail, .caixasenha {
+  width: 20rem;
+  height: 2rem;
+  border-radius: 1rem;
+  border: 2px orange solid;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 15px;
+}
+
+.noaccount {
+  font-size: 12px;
+  }
+
+  .signdone{
+    width: 4rem;
+    height: 2rem;
+  }
+
