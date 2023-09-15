@@ -13,6 +13,7 @@ app.listen(3000, function () {
 });
 
 //* LINK DAS PAGINAS *//
+app.set('views','./visual');
 
 app.get('/', function (req, res) {
   res.render('index.ejs');
@@ -42,6 +43,14 @@ app.get('/login', function (req, res) {
   res.render('../visual/login.ejs');
 });
 
+app.get('/listaClientes', function(req, res){
+  var clie = new Cliente();
+
+  clie.listar(conexao, function(result) {
+    res.render('../visual/clientelista.ejs', {Cliente: result});
+  });
+});
+
 app.post('/processarCadastro', function (req, res) {
   var c = new Cliente();
 
@@ -57,13 +66,6 @@ app.post('/processarCadastro', function (req, res) {
   res.render('../visual/registrado.ejs');
 });
 
-
-
-app.set('views','./visual');
-
-app.get('/vans', function (req, res) {
-  res.render('vans.ejs');
-});
 
 //* DATA BASE *//
 

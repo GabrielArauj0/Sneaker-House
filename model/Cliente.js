@@ -19,7 +19,7 @@ module.exports = class Cliente {
     }
 
     listar(conexao, callback) {
-        var sql = "select * from sneakerhouse";
+        var sql = "select * from Cliente";
 
         conexao.query(sql,
             function (err, result){

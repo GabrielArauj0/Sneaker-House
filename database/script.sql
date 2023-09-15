@@ -106,17 +106,6 @@ CREATE TABLE IF NOT EXISTS `sneakerhouse`.`Tenis_has_Compra` (
 ENGINE = InnoDB;
 
 
--- -----------------------------------------------------
--- Table `sneakerhouse`.`Usuários`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `sneakerhouse`.`Usuários` (
-  `Email` VARCHAR(255) NOT NULL,
-  `Senha` VARCHAR(255) NOT NULL,
-  `Nome` VARCHAR(45) NULL,
-  PRIMARY KEY (`Email`))
-ENGINE = InnoDB;
-
-
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
