@@ -44,9 +44,9 @@ app.get('/login', function (req, res) {
 });
 
 app.get('/listaClientes', function(req, res){
-  var clie = new Cliente();
+  var c = new Cliente();
 
-  clie.listar(conexao, function(result) {
+  c.listar(conexao, function(result) {
     res.render('../visual/clientelista.ejs', {Cliente: result});
   });
 });
