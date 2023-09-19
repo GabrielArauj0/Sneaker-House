@@ -35,10 +35,6 @@ app.get('/registro', function (req, res) {
   res.render('../visual/registro.ejs');
 });
 
-app.get('/beneficios', function (req, res) {
-  res.render('../visual/beneficios.ejs');
-});
-
 app.get('/login', function (req, res) {
   res.render('../visual/login.ejs');
 });
@@ -47,7 +43,7 @@ app.get('/listaClientes', function(req, res){
   var c = new Cliente();
 
   c.listar(conexao, function(result) {
-    res.render('../visual/clientelista.ejs', {Cliente: result});
+    res.render('../visual/clientelista.ejs', {cliente: result});
   });
 });
 

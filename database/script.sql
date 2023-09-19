@@ -21,7 +21,7 @@ USE `sneakerhouse` ;
 -- Table `sneakerhouse`.`Cliente`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `sneakerhouse`.`Cliente` (
-  `CPF` INT NOT NULL,
+  `CPF` bigint NOT NULL,
   `Nome` VARCHAR(100) NOT NULL,
   `Endereco` VARCHAR(150) NULL,
   `Celular` VARCHAR(15) NULL,
